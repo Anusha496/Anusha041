@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Android 15 Features</title>
+        <link rel="icon" href="and.logo.png">
+    </head>
+    <body background="bck3.gif" style="background-repeat: no-repeat; background-size: cover;">
+    <h1 style="font-family:cursive; color:rgb(206, 243, 151)">Android 15 features and changes </h1>
+               <ul style=" font-family:cursive; color:#b3ffff;">
+                
+            <dl>
+            <dt style="color:aqua; font-family: algerian;">Accessibility</dt><br>
+            <dd>Better Braille-In Android 15, we've made it possible for TalkBack to support Braille displays that are using the HID standard over both USB and secure Bluetooth.</dd><br>
+            <dt style="color:aqua; font-family: algerian;">Camera and media</dt><br>
+               <ul>
+               <li>Beginning with Android 15, when an app requests direct playback, the system invalidates any currently open direct AudioTrack objects which prevent fulfilling the new track request.</li>
+               <li>Apps that target Android 15 must be the top app or running an audio-related foreground service in order to request audio focus.</li>
+               <li>Android 15 introduces Low Light Boost, an auto-exposure mode available to both Camera 2 and the night mode camera extension.</li>
+               <li>Android 15 adds extensions for more control over the camera hardware and its algorithms on supported devices.</li>
+               <li>Android 15 lets you control the HDR headroom with set Desired Hdr Headroom to strike a balance between SDR and HDR content.</li>
+               <li>Android 15 introduces the Loudness Codec Controller API, based on the CTA-2075 loudness standard. This API can help you manage audio loudness inconsistencies to make sure users don't have to constantly adjust volume when switching between content or apps.</li><br>
+               </ul>
+            <dt style="color:aqua; font-family: algerian;">Connectivity</dt><br>
+               <ul>
+               <li>Android 15 continues to extend platform support for satellite connectivity and includes some UI elements to ensure a consistent user experience across the satellite connectivity landscape.</li>
+               <li>Android 15 is working to make the tap to pay experience more seamless and reliable while continuing to support Android's robust NFC app ecosystem.</li>
+               <li>Android 15 introduces a Wallet role that allows tighter integration with the user's preferred wallet app.</li><br>
+               </ul>
+            <dt style="color:aqua; font-family: algerian;">Core functionality</dt><br>
+            <ul>
+                <li>In Android 15, apps are only be removed from the FLAG STOPPED state through direct or indirect user action. In addition to the existing restrictions, the system also cancels all pending intents when the app enters the stopped state on Android 15.</li>
+                <li>Beginning with Android 15, the Android system supports development devices that are configured to use a page size of 16 KB. If you use native code in your app, you should rebuild your app with support for 16 KB devices, and all developers should test their apps using a 16 KB environment to verify that there are no unexpected regressions in app behavior.</li>
+                <li>Required changes for some apps to support private space-Private space is a feature in Android 15 that lets users create a separate space on their device where they can keep sensitive apps away from prying eyes, under an additional layer of authentication. Because apps in the private space have restricted visibility, some types of apps need to take additional steps to be able to see and interact with apps in a user's private space.</li>
+                <li>The legacy, PNG-based emoji font file  has been removed, leaving just the vector-based file.</li><br>
+                </ul>
+            <dt style="color:aqua; font-family: algerian;">Developer productivity and tools</dt><br>
+            <ul>
+                <li>Android 15 includes substantial improvements to the Pdf Renderer APIs.</li>
+                <li>Automatic language switching refinements-Android 15 adds additional controls to help apps tune automatic language switching to their use case.</li>
+                <li>Improved OpenType Variable Font API-Android 15 improves the usability of the OpenType variable font.</li>
+                <li>Starting in Android 15, a Text View and the underlying line breaker can preserve the given portion of text in the same line to improve readability.</li>
+                <li>Android 15 includes OS level support for app archiving and unarchiving, making it easier for all app stores to implement it.</li><br>
+            </ul>
+            <dt style="color:aqua; font-family: algerian;">Graphics</dt><br>
+            <ul>
+                <li>Android 15 continues our modernization of Android's Canvas graphics system with new capabilities.</li><br>
+            </ul>
+            <dt style="color:aqua; font-family: algerian;">Large screens and form factors</dt><br>
+            <ul>
+                <li>Android 15 gives users better ways to multitask on large screen devices.</li><br>
+            </ul>
+            <dt style="color:aqua; font-family: algerian;">Performance and battery</dt><br>
+            <ul>
+                <li>The Application Start Info API on Android 15 helps provide insight into app startup including startup state, time spent in launch phases, how your app was started when your Application class was instantiated, and more.</li>
+                <li>Android 15 includes the ProfilingManager class, which lets you collect profiling information from within your app.</li><br>
+            </ul>
+            <dt style="color:aqua; font-family: algerian;">Privacy</dt><br>
+            <ul>
+               <li>Android 15 adds support for apps to detect that they are being recorded.</li>
+               <li>Android 15 builds in support for more precise Intent resolution through UriRelativeFilterGroup, which contains a set of UriRelativeFilter objects that form a set of Intent matching rules that must each be satisfied, including URL query parameters, URL fragments, and blocking or exclusion rules.</li>
+               <li>Apps can highlight only the most-recently-selected photos and videos when partial access to media permissions is granted.</li>
+               <li>Android 15 supports partial screen sharing so users can share or record just an app window rather than the entire device screen. This feature, first enabled in Android 14 QPR2, includes MediaProjection callbacks that allow your app to customize the partial screen sharing experience.</li><br>
+            </ul>
+            <dt style="color:aqua; font-family: algerian;">Security</dt><br>
+            <ul>
+                <li>For apps targeting Android 15, we've included further changes to prevent malicious background apps from bringing other apps to the foreground, elevating their privileges, and abusing user interaction.</li>
+                <li>Safer intents-For apps targeting Android 15, intents that target specific components must accurately match the target's intent-filter specifications, and intents without an action no longer match any intent filters.</li>
+                <li>Starting with Android 15, developers can link specific views like username or password fields with Credential Manager requests, making it easier to provide a tailored user experience during the sign-in process.</li>
+            </ul><br>
+            <dt style="color:aqua;  font-family: algerian;">User experience and system UI</dt><br>
+            <ul>
+                <li>Predictive back animations enabled for apps that opted in the developer option for predictive back animations has been removed. Instead, system animations such as back-to-home, cross-task, and cross-activity appear for apps that have opted in to the predictive back gesture either entirely or at an activity level.</li>
+                <li>For apps that target Android 15, we're including several changes related to edge-to-edge. Your app's user experience might be negatively impacted by these changes if your app has UI elements near the top or bottom of the screen and your app doesn't handle insets.</li>
+                <li>If your app targets Android 15 or higher, Configuration no longer excludes the system bars.</li>
+                <li>In previous versions of Android, some cursive fonts or languages that have complex shaping might draw the letters in the previous or next character's area. In some cases, such letters were clipped at the beginning or ending position. Starting in Android 15, a TextView allocates width for drawing enough space for such letters and allows apps to request extra paddings to the left to prevent clipping.</li>
+                <li>Android 15 QPR1 adds a prominent status bar indicator for media projection (screen sharing, casting, and recording) to ensure users are aware of ongoing media projection and to provide an accessible control for stopping the projection. Also, in-progress media projection is automatically stopped when the device screen is locked.</li>
+            </ul><br>
+            </dl>
+    
+        </body>
+</html>
